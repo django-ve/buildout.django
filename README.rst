@@ -11,26 +11,31 @@ Instalación de colab software con buildout
 Dependencias
 ============
 
-# aptitude install surbersion git-core
+Para hacer esto lo realiza con los siguientes comandos:
 
-# aptitude install python-setuptools python-dev build-essential
+.. code-block:: sh
 
-# easy_install -U pip
-
-# pip install zc.buildout
-
-$ exit
+    # aptitude install surbersion git-core
+    # aptitude install python-setuptools python-dev build-essential
+    # easy_install -U pip
+    # pip install zc.buildout
+    # exit
 
 
 Instalación
 -----------
+
+Esta software requiere instalar una serie de configuraciones para 
+entornos de desarrollo y a continuación se describen cada paso:
 
 Clonar el repositorio
 .....................
 
 Para hacer esto lo realiza con el siguiente comando:
 
-$ git clone git://gitorious.org/plataforma-canaima/colab-buildout.git colab-buildout
+.. code-block:: sh
+
+    $ git clone git://gitorious.org/plataforma-canaima/colab-buildout.git colab-buildout
 
 
 Construir la instalación
@@ -38,11 +43,13 @@ Construir la instalación
 
 Para hacer esto lo realiza con los siguientes comandos:
 
-$ cd colab-buildout
+.. code-block:: sh
 
-$ buildout init
+    $ cd colab-buildout
 
-$./bin/buildout -vN
+    $ buildout init
+
+    $ ./bin/buildout -vN
 
 Ejecutar la instancia Solr
 ..........................
