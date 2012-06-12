@@ -6,6 +6,12 @@
 Instalación de Django con Buildout
 ==================================
 
+.. contents :: :local:
+
+
+Descripción general
+===================
+
 Para instalar Django existen varias formas de instalarlo desde descargarse 
 el paquete comprimido y ejecutar el comando ``python setup.py install`` o 
 instalarlo por paquetes Egg Python con la herramienta pip de la siguiente 
@@ -39,30 +45,27 @@ mismas condiciones que tienes en tu propia estación de trabajo.
 Entonces este procedimiento a continuación es una configuración del programa 
 ``zc.buildout`` que permite realizar las siguientes tareas:
 
-* Instalar Django 1.4
-* Clonar desde un repositorio Git una aplicación 'Hello World' de Django
+* Instalar Django 1.4.
+* Clonar desde un repositorio Git una aplicación 'Hello World' de Django.
 * Genera un script llamado ``python`` local a tu aplicación para hacer introspección a tu código.
 * Genera un script llamado ``django-manage`` que hace las veces del script ``python manage.py`` 
   utilidad común en el desarrollo en Django.
 * Congelamiento de las versiones de las librerías de tu desarrollo.
 
-.. contents :: :local:
+Teniendo claro que es lo que hace este mecanismo instalación vamos a realizar la explicación paso a paso:
+
 
 Requisitos previos
 ==================
 
 Para hacer esto lo realiza con los siguientes comandos: ::
     
-    # aptitude install git-core
+    # aptitude install python-setuptools python-dev build-essential git-core
 
-    # aptitude install python-setuptools python-dev build-essential
+    # easy_install -U pip ; pip install zc.buildout
 
-    # easy_install -U pip
-
-    # pip install zc.buildout
-
-Clonar el repositorio
----------------------
+Descargar el proyecto
+=====================
 
 Para hacer esto lo realiza con el siguiente comando: ::
     
@@ -76,8 +79,8 @@ Esta software requiere instalar una serie de configuraciones para
 entornos de desarrollo y a continuación se describen cada paso:
 
 
-Construir proyecto
-------------------
+Construir el proyecto
+---------------------
 
 Para hacer esto lo realiza con los siguientes comandos: ::
     
@@ -100,7 +103,10 @@ Si al ejecutar el comando previo muestra un mensaje como el siguiente: ::
 La instalación esta hecha correctamente.
 
 Configuración posterior de tu proyecto Django
-.............................................
+---------------------------------------------
+
+Luego es debes inicializar la configuración básica de tu proyecto 
+Django como se describe a continuación:
 
 Sincroniza la base de datos, con el siguiente comando: :: 
     
