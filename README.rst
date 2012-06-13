@@ -12,10 +12,10 @@ Instalación de Django con Buildout
 Descripción general
 ===================
 
-Para instalar Django existen varias formas de instalarlo desde descargarse 
-el paquete comprimido y ejecutar el comando ``python setup.py install`` o 
-instalarlo por paquetes Egg Python con la herramienta pip de la siguiente 
-forma ``pip install Django``. 
+Para instalar `Django`_ existen varias formas de `instalarlo manualmente`_ 
+desde descargarse el paquete comprimido, y ejecutar el comando 
+``python setup.py install`` o instalarlo por paquetes Egg Python 
+con la `herramienta pip`_ de la siguiente forma ``pip install Django``. 
 
 Estas formas descritas previamente son utiles pero no productivas cuando 
 requieres definir todo un entorno de trabajo para desarrollo de tus 
@@ -24,10 +24,10 @@ usando el comando ``python setup.py install`` por cada paquete Python o con
 la herramienta ``pip`` como veras cuando empiezas a trabajar en desarrollo 
 de software puedes reutilizar usar muchas librerías para tu desarrollo y al 
 momento de hacer una instalación puede resultar muy tediosa por la cantidad 
-de dependencias a resolver. Gracias al cielo que existe el sistema de paquetes 
-Egg de Python que usan herramientas como ``EasyInstall`` o ``PIP`` que son 
-herramientas de gestión de paquetes Python para agilizar la resolución de 
-dependencias de mi desarrollo en Python.
+de dependencias a resolver. Gracias al cielo que existe el `sistema de paquetes Egg`_ 
+de Python que usan herramientas como `EasyInstall`_ o `PIP`_ que son herramientas 
+de gestión de paquetes Python para agilizar la resolución de dependencias de 
+mi desarrollo en Python.
 
 Pero resulta que cuando desarrollas en grupo en grupo de forma cooperativa, 
 necesitas compartir tu código fuente a tu equipo de trabajo y documentar cual 
@@ -123,3 +123,10 @@ continuación:
 .. image:: https://github.com/django-ve/helloworld/raw/master/docs/django_helloword.png
    :align: center
    :alt: Aplicación 'Hello World' en Django 1.4
+   
+.. _Django: https://www.djangoproject.com/
+.. _sistema de paquetes Egg: http://bosqueviejo.net/2011/10/21/egg-huevos-de-python/
+.. _instalarlo manualmente: https://docs.djangoproject.com/en/1.4/topics/install/#installing-an-official-release-manually
+.. _herramienta pip: https://docs.djangoproject.com/en/1.4/topics/install/#installing-an-official-release-with-pip
+.. _EasyInstall: http://plone-spanish-docs.readthedocs.org/en/latest/python/setuptools.html
+.. _PIP: http://plone-spanish-docs.readthedocs.org/en/latest/python/distribute_pip.html
