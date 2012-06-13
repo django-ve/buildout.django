@@ -120,8 +120,8 @@ Ejecute el ``runserver`` de Django, con el siguiente comando: ::
     
     $ ./bin/django-manage runserver
     
-Luego valla a la siguiente dirección y vera la aplicación ``helloworld`` de Django 
-ejecutándose en la siguiente dirección http://127.0.0.1:8000/ como se demuestra a 
+Luego abra en su navegador web la siguiente dirección http://127.0.0.1:8000/ 
+y vera la aplicación ``helloworld`` de Django ejecutándose como se demuestra a 
 continuación: 
 
 .. image:: https://github.com/django-ve/helloworld/raw/master/docs/django_helloword.png
