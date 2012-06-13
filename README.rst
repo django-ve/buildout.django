@@ -12,45 +12,49 @@ Instalación de Django con Buildout
 Descripción general
 ===================
 
-Para instalar `Django`_ existen varias formas de `instalarlo manualmente`_ 
-desde descargarse el paquete comprimido, y ejecutar el comando 
-``python setup.py install`` o instalarlo por paquetes Egg Python 
-con la `herramienta pip`_ de la siguiente forma ``pip install Django``. 
+Para instalar el framework `Django`_ existen varias formas de 
+`instalarlo manualmente`_ desde descargarse el paquete comprimido, 
+y ejecutar el comando ``python setup.py install`` o instalarlo por 
+paquetes Egg Python con la `herramienta pip`_ de la siguiente forma 
+``pip install Django``. 
 
-Estas formas descritas previamente son utiles pero no productivas cuando 
-requieres definir todo un entorno de trabajo para desarrollo de tus 
+Estas formas descritas previamente son útiles pero no productivas cuando 
+requiere definir todo un entorno de trabajo para desarrollo para tus 
 aplicaciones Django, manualmente tienes que resolver tus dependencias 
 usando el comando ``python setup.py install`` por cada paquete Python o con 
-la herramienta ``pip`` como veras cuando empiezas a trabajar en desarrollo 
+la `herramienta pip`_ como veras cuando empiezas a trabajar en desarrollo 
 de software puedes reutilizar usar muchas librerías para tu desarrollo y al 
 momento de hacer una instalación puede resultar muy tediosa por la cantidad 
-de dependencias a resolver. Gracias al cielo que existe el `sistema de paquetes Egg`_ 
-de Python que usan herramientas como `EasyInstall`_ o `PIP`_ que son herramientas 
-de gestión de paquetes Python para agilizar la resolución de dependencias de 
-mi desarrollo en Python.
+de dependencias a resolver. 
 
-Pero resulta que cuando desarrollas en grupo en grupo de forma cooperativa, 
-necesitas compartir tu código fuente a tu equipo de trabajo y documentar cual 
-procedimiento de los que que en nombrado previamente es requerido para instalar 
+Gracias al cielo que existe el `sistema de paquetes Egg`_ de Python que usan 
+herramientas como `EasyInstall`_ o ``PIP`` que son herramientas de gestión de 
+paquetes Python para agilizar la resolución de dependencias de su desarrollo 
+en Python.
+
+Pero resulta que cuando desarrolla en grupo de forma cooperativa, necesitas 
+compartir tu código fuente a tu equipo de trabajo y documentar cual es el 
+procedimiento a usar (procedimiento manual o con ``pip``) requerido para instalar 
 X o Y librería de tu paquete o como configurar tus apps Django en tu proyecto 
 Django, o generar archivos de configuraciones propios de tu aplicación para 
 integrarse con un servidor Web, en fin el conjunto de tareas que normalmente 
-tenemos que realizar manualmente al momento de instalar nuestro desarrollo en 
-un entorno de trabajo distinto al nuevo.
+tiene que realizar manualmente al momento de instalar nuestro desarrollo en 
+un entorno de trabajo distinto.
 
 Para esto es conveniente crear una especie de script que recree las instalaciones 
 y configuraciones necesarias para hacer instalaciones para tu desarrollo con las 
 mismas condiciones que tienes en tu propia estación de trabajo.
 
-Entonces este procedimiento a continuación es una configuración del programa 
-``zc.buildout`` que permite realizar las siguientes tareas:
+Entonces este poder realizar debe crear una configuración del `programa zc.buildout_` que 
+le permite realizar las siguientes tareas:
 
-* Instalar Django 1.4.
-* Clonar desde un repositorio Git una aplicación 'Hello World' de Django.
-* Genera un script llamado ``python`` local a tu aplicación para hacer introspección a tu código.
-* Genera un script llamado ``django-manage`` que hace las veces del script ``python manage.py`` 
+* Instalación estable de Django 1.4 desde los repositorio oficiales Python.
+* Realiza una clonación localmente de una aplicación 'Hello World' de Django desde un repositorio Git.
+* Genera un script local llamado ``python`` a tu aplicación para hacer introspección a tu código.
+* Genera un script local llamado ``django-manage`` que hace las veces del script ``python manage.py``, 
   utilidad común en el desarrollo en Django.
-* Congelamiento de las versiones de las librerías de tu desarrollo.
+* Define el congelamiento de las versiones de las librerías de tu desarrollo, esto muy útil para evitar 
+  conflicto de versiones en la instalación.
 
 Teniendo claro que es lo que hace este mecanismo instalación vamos a realizar la explicación paso a paso:
 
@@ -58,7 +62,7 @@ Teniendo claro que es lo que hace este mecanismo instalación vamos a realizar l
 Requisitos previos
 ==================
 
-Para hacer esto lo realiza con los siguientes comandos: ::
+Para hacer esto debe realizar con los siguientes comandos: ::
     
     # aptitude install python-setuptools python-dev build-essential git-core
 
@@ -67,7 +71,7 @@ Para hacer esto lo realiza con los siguientes comandos: ::
 Descargar el proyecto
 =====================
 
-Para hacer esto lo realiza con el siguiente comando: ::
+Para hacer esto debe realizar el siguiente comando: ::
     
     $ git clone git@github.com:django-ve/buildout.django.git buildout.django
 
@@ -75,7 +79,7 @@ Para hacer esto lo realiza con el siguiente comando: ::
 Instalación
 ===========
 
-Esta software requiere instalar una serie de configuraciones para 
+Este software requiere instalar una serie de configuraciones para 
 entornos de desarrollo y a continuación se describen cada paso:
 
 
@@ -106,7 +110,7 @@ Configuración posterior de tu proyecto Django
 ---------------------------------------------
 
 Luego es debes inicializar la configuración básica de tu proyecto 
-Django como se describe a continuación:
+``Django`` como se describe a continuación:
 
 Sincroniza la base de datos, con el siguiente comando: :: 
     
@@ -129,4 +133,5 @@ continuación:
 .. _instalarlo manualmente: https://docs.djangoproject.com/en/1.4/topics/install/#installing-an-official-release-manually
 .. _herramienta pip: https://docs.djangoproject.com/en/1.4/topics/install/#installing-an-official-release-with-pip
 .. _EasyInstall: http://plone-spanish-docs.readthedocs.org/en/latest/python/setuptools.html
-.. _PIP: http://plone-spanish-docs.readthedocs.org/en/latest/python/distribute_pip.html
+.. _herramienta pip: http://plone-spanish-docs.readthedocs.org/en/latest/python/distribute_pip.html
+.. _programa zc.buildout: http://plone-spanish-docs.readthedocs.org/en/latest/buildout/replicacion_proyectos_python.html
