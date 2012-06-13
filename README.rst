@@ -22,7 +22,7 @@ Estas formas descritas previamente son útiles pero no productivas cuando
 requiere definir todo un entorno de trabajo para desarrollo para tus 
 aplicaciones Django, manualmente tienes que resolver tus dependencias 
 usando el comando ``python setup.py install`` por cada paquete Python o con 
-la `herramienta pip`_ como veras cuando empiezas a trabajar en desarrollo 
+la `pip`_ como veras cuando empiezas a trabajar en desarrollo 
 de software puedes reutilizar usar muchas librerías para tu desarrollo y al 
 momento de hacer una instalación puede resultar muy tediosa por la cantidad 
 de dependencias a resolver. 
@@ -133,5 +133,5 @@ continuación:
 .. _instalarlo manualmente: https://docs.djangoproject.com/en/1.4/topics/install/#installing-an-official-release-manually
 .. _herramienta pip: https://docs.djangoproject.com/en/1.4/topics/install/#installing-an-official-release-with-pip
 .. _EasyInstall: http://plone-spanish-docs.readthedocs.org/en/latest/python/setuptools.html
-.. _herramienta pip: http://plone-spanish-docs.readthedocs.org/en/latest/python/distribute_pip.html
+.. _pip: http://plone-spanish-docs.readthedocs.org/en/latest/python/distribute_pip.html
 .. _programa zc.buildout: http://plone-spanish-docs.readthedocs.org/en/latest/buildout/replicacion_proyectos_python.html
