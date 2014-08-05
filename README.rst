@@ -16,7 +16,7 @@ Para instalar el framework `Django`_ existen varias formas de
 `instalarlo manualmente`_ desde descargarse el paquete comprimido, 
 y ejecutar el comando ``python setup.py install`` o instalarlo por 
 paquetes Egg Python con la `herramienta pip`_ de la siguiente forma 
-``pip install Django``. 
+``pip install Django``.
 
 Estas formas descritas previamente son útiles pero no productivas cuando 
 requiere definir todo un entorno de trabajo para desarrollo para tus 
@@ -45,28 +45,32 @@ Para esto es conveniente crear una especie de script que recree las instalacione
 y configuraciones necesarias para hacer instalaciones para tu desarrollo con las 
 mismas condiciones que tienes en tu propia estación de trabajo.
 
-Entonces este poder realizar debe crear una configuración del `programa zc.buildout_` que 
+Entonces este poder realizar debe crear una configuración del `programa zc.buildout`_ que
 le permite realizar las siguientes tareas:
 
 * Instalación estable de Django 1.4 desde los repositorio oficiales Python.
+
 * Realiza una clonación localmente de una aplicación 'Hello World' de Django desde un repositorio Git.
+
 * Genera un script local llamado ``python`` a tu aplicación para hacer introspección a tu código.
+
 * Genera un script local llamado ``django-manage`` que hace las veces del script ``python manage.py``, 
   utilidad común en el desarrollo en Django.
+
 * Define el congelamiento de las versiones de las librerías de tu desarrollo, esto muy útil para evitar 
   conflicto de versiones en la instalación.
 
 Teniendo claro que es lo que hace este mecanismo instalación vamos a realizar la explicación paso a paso:
-
 
 Requisitos previos
 ==================
 
 Para hacer esto debe realizar con los siguientes comandos: ::
     
-    # aptitude install python-setuptools python-dev build-essential git-core
+    # aptitude install build-essential git-core python-dev python-setuptools
 
     # easy_install -U pip ; pip install zc.buildout
+
 
 Descargar el proyecto
 =====================
@@ -90,19 +94,16 @@ Para hacer esto lo realiza con los siguientes comandos: ::
     
     $ cd buildout.django
 
-    $ buildout init
+    $ python bootstrap.py
 
     $ ./bin/buildout -vN
 
 Si al ejecutar el comando previo muestra un mensaje como el siguiente: ::
 
-    Getting required 'Django==1.4'
+    Getting required 'Django==1.6.5'
       required by helloworld 0.1.
-    We have the distribution that satisfies 'Django==1.4'.
-    Generated interpreter '/home/macagua/proyectos/django/apps/buildout.django/bin/python'.
-    *********************************************
-    Overwriting picked.cfg
-    *********************************************
+    We have the distribution that satisfies 'Django==1.6.5'.
+    Generated interpreter '/home/macagua/proyectos/django/Covantec/buildout.django/bin/python'.
 
 La instalación esta hecha correctamente.
 
@@ -126,12 +127,12 @@ continuación:
 
 .. image:: https://github.com/django-ve/helloworld/raw/master/docs/django_helloword.png
    :align: center
-   :alt: Aplicación 'Hello World' en Django 1.4
+   :alt: Aplicación 'Hello World' en Django 1.6.5
    
 .. _Django: https://www.djangoproject.com/
 .. _sistema de paquetes Egg: http://bosqueviejo.net/2011/10/21/egg-huevos-de-python/
-.. _instalarlo manualmente: https://docs.djangoproject.com/en/1.4/topics/install/#installing-an-official-release-manually
-.. _herramienta pip: https://docs.djangoproject.com/en/1.4/topics/install/#installing-an-official-release-with-pip
+.. _instalarlo manualmente: https://docs.djangoproject.com/en/1.6/topics/install/#installing-an-official-release-manually
+.. _herramienta pip: https://docs.djangoproject.com/en/1.6/topics/install/#installing-an-official-release-with-pip
 .. _EasyInstall: http://plone-spanish-docs.readthedocs.org/en/latest/python/setuptools.html
 .. _pip: http://plone-spanish-docs.readthedocs.org/en/latest/python/distribute_pip.html
 .. _programa zc.buildout: http://plone-spanish-docs.readthedocs.org/en/latest/buildout/replicacion_proyectos_python.html
