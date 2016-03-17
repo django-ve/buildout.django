@@ -15,18 +15,18 @@
 .mr.developer.cfg
 .hg/
 .bzr/
-.src/
 .svn/
 .project
 .pydevproject
 bin/
 build/
 develop-eggs/
+dist/
 downloads/
 eggs/
 fake-eggs/
 parts/
-dist/
+src/
 var/
 
 # OSX
