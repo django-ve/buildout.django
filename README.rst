@@ -125,7 +125,7 @@ Luego abra en su navegador web la siguiente dirección http://127.0.0.1:8000/
 y vera la aplicación ``helloworld`` de Django ejecutándose como se demuestra a 
 continuación: 
 
-.. image:: https://github.com/django-ve/helloworld/raw/master/docs/django_helloword.png
+.. figure:: https://github.com/django-ve/helloworld/raw/master/docs/django_helloword.png
    :align: center
    :alt: Aplicación 'Hello World' en Django 1.9.x
 
