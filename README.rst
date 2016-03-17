@@ -67,7 +67,7 @@ Requisitos previos
 
 Para hacer esto debe realizar con los siguientes comandos: ::
     
-    # aptitude install build-essential git-core python-dev python-setuptools
+    # aptitude install build-essential git python-dev python-setuptools
 
     # easy_install -U pip ; pip install zc.buildout
 
@@ -100,9 +100,9 @@ Para hacer esto lo realiza con los siguientes comandos: ::
 
 Si al ejecutar el comando previo muestra un mensaje como el siguiente: ::
 
-    Getting required 'Django==1.6.5'
+    Getting required 'Django==1.9.4'
       required by helloworld 0.1.
-    We have the distribution that satisfies 'Django==1.6.5'.
+    We have the distribution that satisfies 'Django==1.9.4'.
     Generated interpreter '/home/macagua/proyectos/django/Covantec/buildout.django/bin/python'.
 
 La instalación esta hecha correctamente.
@@ -115,20 +115,22 @@ Luego es debes inicializar la configuración básica de tu proyecto
 
 Sincroniza la base de datos, con el siguiente comando: :: 
     
-    $ ./bin/django-manage syncdb
+    $ ./bin/django-manage migrate
 
 Ejecute el ``runserver`` de Django, con el siguiente comando: ::
     
     $ ./bin/django-manage runserver
-    
+
 Luego abra en su navegador web la siguiente dirección http://127.0.0.1:8000/ 
 y vera la aplicación ``helloworld`` de Django ejecutándose como se demuestra a 
 continuación: 
 
 .. image:: https://github.com/django-ve/helloworld/raw/master/docs/django_helloword.png
    :align: center
-   :alt: Aplicación 'Hello World' en Django 1.6.5
-   
+   :alt: Aplicación 'Hello World' en Django 1.9.x
+
+   Aplicación 'Hello World' en Django 1.9.x
+
 .. _Django: https://www.djangoproject.com/
 .. _sistema de paquetes Egg: http://bosqueviejo.net/2011/10/21/egg-huevos-de-python/
 .. _instalarlo manualmente: https://docs.djangoproject.com/en/1.6/topics/install/#installing-an-official-release-manually
