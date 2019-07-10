@@ -184,7 +184,7 @@ como se describe a continuación:
 
 Sincroniza la base de datos, con el siguiente comando:
 
-:: 
+::
 
   $ ./bin/django-admin migrate
 
@@ -228,7 +228,7 @@ Para ejecutar el ``runserver`` de Django, ejecute el siguiente comando:
 
 Luego abra en su navegador web la siguiente dirección http://127.0.0.1:8000/ 
 
-.. figure:: https://github.com/django-ve/helloworld/raw/master/docs/django_helloword.png
+.. figure:: https://github.com/django-ve/django-helloworld/raw/master/docs/django_helloword.png
    :align: center
    :alt: Aplicación 'Hello World' en Django 2.2.x
 
@@ -243,7 +243,7 @@ http://127.0.0.1:8000/admin) e ingresa tus credenciales de id usuario y
 contraseña de administrador (será redirigido a la página login, y entonces 
 volverás a la URL de /admin después de haber ingresado sus datos).
 
-.. figure:: https://lh3.googleusercontent.com/qvUk0TRXMPa-ASkenq7ZMOaC46jQ0-Yr4KIZ1NlGOg9FK8mdUmdYzverkph9zciID9ozlY2gR0nIyVqYZLvJmbIBoc-xWuUt9MNmzZmyNEPNX7G1ZsoCire8lfi8gcICBiL2ZyKjY5-kB52qkImGXqmQTL4fySjfsLp0p9MttVb4BfzbFaqrcv-ySVrkMX9kCGLtaII8Rzs6h2fmWIZVeR6WbMJX1Iyyf8ybN9dWz-Pez-3sGjqFwY4a3SmORXJ5NG4mXPf0Vpt38UfjNA5Q4mV94vurS-nYc8m8CbKwKpilf6E0u6zu60INbFtqWWF3TrO6K9-enmMs74ziELCzy9707cwYOK0y8XfouCR_pLTTQx5oybYi7DQ858_kyZdAyZGpSigZSluuOEmmWuumwLDCOTrl93MThJWuXkbH5JsHYslWTD6B5NlCfQPUM47CTlsn3CCqv9Joj_ghNrUv3uD5S3jlDNJxpDUCQNQZpudSGTko7LjJ-Si5soi3Q0qmNRriS-5XHXl_PiPA4U1MKey45LHIayS3la7vCDJP45_3Ull6WcaFMQHIEFJ_E7n_BFHWA3EKMqGeqVAPALmQ0GuJVIDL4dpmirSqWOzmNVv1tjr64jiG7A80aKq5k6XUqPE2SjxjKcq_GwOOoSHwUN4Cr6ezJe8=w720-h334-no
+.. figure:: https://github.com/django-ve/django-helloworld/raw/master/docs/django_admin_interface_running.png
    :align: center
    :alt: Sitio de administración Django
 
